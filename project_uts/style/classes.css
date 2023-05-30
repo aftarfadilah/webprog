@@ -1,0 +1,44 @@
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+.items-start {
+    align-items: start;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-md {
+    max-width: 350px;
+}
+
+.align-top {
+    vertical-align: top;
+}

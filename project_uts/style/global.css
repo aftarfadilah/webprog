@@ -1,0 +1,44 @@
+@import url('classes.css');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#hero {
+    min-height: 100vh;
+    background-color: #fdABAB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero ul {
+    list-style: none;
+    display: flex;
+    column-gap: 36px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#hero ul a {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: letter-spacing .25s ease-in-out;
+}
+
+#hero ul a:hover {
+    letter-spacing: 3px;
+}
+
+#hero ul a:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white
+}

@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #ddd;
+}
+.content {
+    min-height: 100%;
+    margin-top: 120px;
+}
+.navbar {
+    width: 100%;
+    background-color: #F9C041;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    column-gap: 52px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 30px;
+    padding: 24px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 52px;
+    color: grey;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 24px 36px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .2s ease-in-out;
+}
+
+.saldo {
+    margin-top: 36px;
+}
+
+.saldo h3 {
+    color: gray;
+}
+
+.saldo h2 {
+    font-size: 36px;
+}
+
+.actions {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 24px;
+}
+
+.actions .card {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.actions .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.actions .icon img {
+    width: 36px;
+    margin-right: 24px;
+}
+
+/* ====== Login Page ======= */
+.login, .daftar {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 52px;
+
+}
+
+.login h1, .daftar h1 {
+    text-align: center;
+}
+
+.login form, .daftar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login form label, .daftar form label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-bottom: 24px;
+}
+
+.login form label span, .daftar form label span {
+    color: gray;
+}
+
+.btn-primary {
+    background-color: steelblue;
+    border: none;
+    padding: 12px 52px;
+    color: white;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    opacity: .8;
+}
+
+.login .footer, .daftar .footer {
+    color: gray;
+    text-align: center;
+    font-size: 12px;
+}
+
+.login .footer a, .daftar .footer a {
+    color: inherit;
+}
+
+/* ====== Halaman Riwayat ====== */
+
+.riwayat table {
+    width: 100%;
+}
+
+.riwayat table td, .riwayat table th {
+    border-bottom: 1px solid gainsboro;
+}
+
+.riwayat table td, .riwayat table th {
+    text-align: center;
+    padding: 12px 0
+}
+
+.riwayat table td:last-child, .riwayat table th:last-child {
+    text-align: end;
+}
+
+/* ==== Top up ==== */
+.topup-container .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.topup-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.topup-container .input-group {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+/* style untuk button */
+.topup-container button {
+    background-color: #3c8dbc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* style untuk button ketika di hover */
+.topup-container button:hover {
+    background-color: #357ca5;
+}
+
+
+/* ==== Profil ==== */
+
+.profil.card {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 24px 52px;
+}
+
+.profil .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profil .keterangan {
+    opacity: .55;
+    font-size: 14px;
+}
+
+.profil input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profil input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.profil .error {
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.profil .ganti-password {
+    position: relative;
+}
+
+.profil .ganti-password * {
+    pointer-events: none;
+}
+
+.profil .ganti-password:after {
+    content: "Fitur Ubah Password Belum Ada";
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 10;
+    cursor: not-allowed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.profil h1 span {
+    font-size: 12px;
+    opacity: .5;
+    margin-left: 12px;
+}
+
+/* ==== Lainnnya ===== */
+.error-message {
+    background-color: rgba(255,0,0,0.1);
+    padding: 12px 24px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-left: solid 2px red;
+}
+
+.success-message {
+    background-color: rgba(143,188,143,0.1);
+    padding: 12px 24px;
+    color: darkseagreen;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-left: solid 2px darkseagreen;
+}
+
+.success-message a {
+    color: #537d53;
+}
+
+.txt-danger {
+    color: red;
+}
+
+.heading-span {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+    align-items: start;
+}
+
+.heading-span span {
+    opacity: .75;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.success-bayar {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success-bayar img {
+    width: 75%;
+    padding: 24px;
+}
