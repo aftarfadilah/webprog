@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+<style>
+    .parent1, .parent2 {
+        position: relative;
+    }
+    .parent2 {
+        margin-left: 500px;
+    }
+    .parent1 div, .parent2 div {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        position: absolute;
+    }
+    .parent1 div:first-child {
+        left: 0;
+        top: 0;
+        background-color: blue;
+    }
+    .parent1 div:nth-child(2) {
+        left: 50px;
+        top: 50px;
+        background-color: yellow;
+    }
+    .parent1 div:last-child {
+        left: 125px;
+        top: 125px;
+        background-color: red;
+    }
+
+    .parent2 div:nth-child(1){
+        left: 0;
+        top: 0;
+        background-color: blue;
+    }
+    .parent2 div:nth-child(2) {
+        left: 150px;
+        top: 0;
+        background-color: red;
+    }
+    .parent2 div:nth-child(3) {
+        left: 75px;
+        top: 50px;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="parent1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <br>
+        <div class="parent2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
