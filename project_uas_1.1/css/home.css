@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url(fonts/Lora-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Martel';
+    src: url(fonts/Martel-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url(fonts/Exo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    background-color: #EAD9CE;
+    overflow-x:  hidden;
+
+}
+
+/* Navbar */
+.nav-container {
+
+    background: #EAD9CE;
+    box-shadow: 0px 9px 4px 1px rgba(0, 0, 0, 0.25);
+    height: 86px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo-btn{
+    margin-top: 25px;
+}
+
+.nav-items li {
+    list-style: none;
+    transition: opacity .2s ease-in-out;
+}
+
+.nav-items li:hover {
+    opacity: .75;
+}
+
+.nav-items li:nth-last-of-type(4){
+    margin-left: -10px;
+}
+
+.nav-items li a{
+    font-family: 'Lora', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 35px 40px;
+    display: block;
+
+    color: #000000;
+}
+
+/* Header */
+
+.header-cointainer {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    min-height: 800px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.utama{
+    width: 490px;
+    height: 385px;
+    left: 180px;
+    top: 150px;
+}
+
+.utama h1{
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    width: 441px;
+    height: 120px;
+    margin-left: 15px;
+
+    color: #1B1B1B;
+}
+
+.utama p{
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: justify;
+
+    width: 490px;
+    height: 162px;
+    margin-left: 15px;
+
+
+    color: #1B1B1B;
+
+    margin-bottom: 32px;
+}
+
+.cover-utama img{
+    margin-left: 120px;
+    margin-top: 40px;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn-primary {
+    font-family: 'Martel';
+    color: #EAD9CE;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+
+    background: #B07B54;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px 48px;
+    margin-left: 15px;
+    transition: all .5s ease;
+}
+
+.btn-arrow {
+    position: relative;
+}
+
+.btn-primary.btn-arrow:hover {
+    padding-right: 62px;
+}
+
+.btn-arrow:after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    z-index: 20;
+}
+
+.btn-arrow:hover:after {
+    right: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Team Name */
+.team-name {
+    margin-left: 15px;
+    margin-top: 200px;
+}
+
+.ourtim p{
+    font-family: 'Inter';
+    color: #604E14;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    width: 65px;
+    height: 21px;
+    margin-left: 25px;
+}
+
+.minivec {
+    width: 10px;
+    height: 2px;
+}
+
+.honor-team h1{
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.honor-team b{
+    color:  #6E3811;
+}
+
+.input-data{
+    /*margin-left: -150px;*/
+}
+
+.burger img{
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.sushi img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(60%, -50%);
+}
+
+
+.member-team{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 33px;
+    margin-bottom: 100px;
+}
+
+.member-team .info h1{
+
+    display: flex;
+    margin-top: 27px;
+    font-family: 'Poppins';
+    font-size: 23px;
+    line-height: 96.5%;
+    /* or 22px */
+
+    text-transform: uppercase;
+    color: black;
+}
+
+.member-team .info p{
+    font-family: 'Poppins';
+    color: #6E3811;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.member-team div {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.member-team div:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.member-team div:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.input-data{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form-input {
+    width: 900px;
+    margin: auto;
+}
+
+.Judul h1{
+    width: 574px;
+    height: 60px;
+    left: 513px;
+    top: 142px;
+
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 45px;
+    line-height: 60px;
+    margin: auto;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #1B1B1B;
+}
+
+.deskripsi p{
+    width: 490px;
+    height: 108px;
+    left: 513px;
+    top: 219px;
+
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    margin: auto;
+    color: #1B1B1B;
+}
+
+label {
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: justify;
+
+    color: #5B3011;
+}
+
+.Pertanyaan{
+    margin: -80px auto 0 auto;
+    width: 460px;
+}
+
+input[type=text], input[type=number]{
+    width: 400px;
+    border: 1px solid #000000;
+    padding: 9px 8px;
+    margin-left: 20px;
+    background-color: #EAD9CE;
+}
+
+input[type=text], input[type=textbox]{
+    width: 400px;
+    border: 1px solid #000000;
+    padding: 9px 8px;
+    margin-left: 20px;
+    background-color: #EAD9CE;
+}
+
+button[type=submit]{
+    width: 233px;
+    height: 49px;
+    margin-top: 10px;
+
+    background: #54993b;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 29px;
+
+    color: #EAD9CE;
+}
+
+button[type=submit]:hover {
+    background: #468130;
+}
+
+button[type=reset]{
+    width: 233px;
+    height: 49px;
+
+    margin-top: -1000px;
+    background: #BF5419;
+    border-radius: 24.5px 0px 0px 24.5px;
+    border: none;
+
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 29px;
+    margin-left: -15px;
+
+
+    color: #EAD9CE;
+}
+
+button[type=reset]:hover {
+    background: #a33d04;
+}
+
+button[type=submit], button[type=reset] {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.modal-box{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 20px;;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-box.active{
+    opacity: 100;
+    pointer-events:visible;
+}
+
+
+.modal-box h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: green;
+}
+
+.modal-box h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+.modal-box button{
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 10px;
+    margin-top: 25px;
+}
+
+
+@keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+}

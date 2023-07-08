@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+@font-face {
+    font-family: 'Lora';
+    src: url(fonts/Lora-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Martel';
+    src: url(fonts/Martel-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url(fonts/Exo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    background-color: #EAD9CE;
+    overflow-x:  hidden;
+
+}
+
+/* Navbar */
+.nav-container {
+
+    background: #EAD9CE;
+    box-shadow: 0px 9px 4px 1px rgba(0, 0, 0, 0.25);
+    height: 86px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo-btn{
+    margin-top: 25px;
+}
+
+.nav-items li {
+    list-style: none;
+    transition: opacity .2s ease-in-out;
+}
+
+.nav-items li:hover {
+    opacity: .75;
+}
+
+.nav-items li:nth-last-of-type(4){
+    margin-left: -10px;
+}
+
+.nav-items li a{
+    font-family: 'Lora', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 35px 40px;
+    display: block;
+
+    color: #000000;
+}
+
+.list-menu{
+    position: absolute;
+    left: 20px;
+    width: 70%;
+    height: auto;
+    margin: 2%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.pilihanku{
+    position: fixed;
+    right: 20px;
+    width: 250px;
+    height: auto;
+    margin: 2%;
+    border-radius: 12px;
+    background-color: white;
+    padding: 24px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Exo', sans-serif;
+}
+
+.pilihanku #cart-items {
+    margin: 4px 0;
+}
+
+.pilihanku #cart-list {
+    padding-left: 8px;
+}
+
+.pilihanku #cart-list li {
+    padding: 4px 0;
+}
+
+.pilihanku .total-separator {
+    position: relative;
+    margin: 16px 0;
+}
+
+.pilihanku .total-separator .line {
+    border-bottom: 2px solid red;
+}
+
+.pilihanku .total-separator .plus-icon {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    border: white 2px solid;
+    float: right;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.pilihanku .total-separator .plus-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-menu h1 {
+    font-family: 'Exo', sans-serif;
+    margin-bottom: 12px;
+}
+
+.card {
+    display: inline-block;
+    float: left;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 22%;
+    margin: 12px;
+    background-color: rgba(255,255,255,.3);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card .card-body {
+    display: block;
+}
+
+.card .banner {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .2s ease-in-out;
+}
+
+.card .banner:hover {
+    background-size: contain;
+}
+.card .card-body {
+    padding: 24px;
+}
+
+.card .card-body span {
+    display: block;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+
+.card .card-body span.nama {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card .card-body span.harga {
+    margin-top: 8px;
+    opacity: .75;
+    transition: .2s ease-in-out;
+}
+
+.card .card-body span.harga:hover {
+    opacity: 1;
+}
+
+.card button.add-to-cart {
+    background-color: #4CAF50;
+    transition: .2s ease-in-out;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.card button.add-to-cart:hover {
+    background-color: #3e8e41;
+}
+
+.card button.add-to-cart:disabled {
+    background-color: #4CAF50;
+    opacity: .25;
+    cursor: not-allowed;
+}
+
